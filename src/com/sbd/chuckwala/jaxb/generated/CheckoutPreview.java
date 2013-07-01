@@ -68,6 +68,8 @@ public class CheckoutPreview {
      * 
      */
     public void setMediaAssetID(int value) {
+    	if(value==0)
+    		throw new RuntimeException("TEst");
         this.mediaAssetID = value;
     }
 
